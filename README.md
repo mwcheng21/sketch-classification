@@ -6,23 +6,32 @@ CURRENTLY IN PROGRESS
 20 Epoch fine tuning
 | Model type | top-1  | top-5  |
 |------------|---|---|
-| alexnet    | 0.6685  | 0.886  |
-| vgg        | 0.727  | 0.9105   |
-| squeezenet | 0.664  | 0.8765  |
-| densenet   | 0.7515  | 0.92975  |
-| resnet     | 0.72625  | 0.91725  |
+| alexnet    | 0.659  | 0.8805  |
+| vgg        | 0.72425  | 0.909   |
+| squeezenet | 0.6595  | 0.87925  |
+| densenet   | 0.75175  | 0.93375  |
+| resnet     | 0.735  | 0.923  |
 
 
-VGG or RESNET IS WRONG, TODO: Double check
 15 Epoch fine tuning
 | Model type | top-1  | top-5  |
 |------------|---|---|
 | alexnet    | 0.66125  | 0.874  |
-| vgg        | 0.72875  | 0.92075   |
+| vgg        | 0.7215  | 0.909   |
 | squeezenet | 0.6585  | 0.87  |
 | densenet   | 0.75325  | 0.93  |
 | resnet     | 0.72875  | 0.92075  |
 
+
+Vanilla models - no fine tuning
+| Model type | top-1  | top-5  |
+|------------|---|---|
+| alexnet    | 0.005  | 0.02375  |
+| vgg        | 0.00425  | 0.022   |
+| squeezenet | 0.0055  | 0.026  |
+| densenet   | 0.0025  | 0.02325  |
+| resnet     | 0.00425  | 0.02275  |
+*Note how densenet top-1 is twice as good as all other methods
 
 Sketches differ from images in 2 ways. The most obvious way is the lack of color. The other is the slight inacuracies in hand drawn images, such as imperfect proportions, straight lines, and other common features. As a result, sketches are not always classified correctly, as they do not always have the same features.
 Some have tried using pretrained imagenet classifiers to classify sketches. However these sketches are usually well drawn sketches by artists, which means typcial features of the image still exist. However, these models are not cognizant of the fact that most people do not have the time or ability to draw such detailed sketches.

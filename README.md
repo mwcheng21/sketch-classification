@@ -19,11 +19,15 @@
 ## Models:
 Get model:
 Click link, URL will be in format `https://drive.google.com/file/d/<FILEID>/view`
-`!wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=<FILEID>' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1qEGk84k8KGK93jRD9OIlW1Ed4c5Iq96Z" -O <FILEOUTPUT> && rm -rf /tmp/cookies.txt`
+```bash
+wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=<FILEID>' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1qEGk84k8KGK93jRD9OIlW1Ed4c5Iq96Z" -O <FILEOUTPUT> && rm -rf /tmp/cookies.txt
+```
 
 Load model:
-`import torch
-model = torch.load('<FILEOUTPUT>')`
+```python
+import torch
+model = torch.load('<FILEOUTPUT>')
+```
 
 
 [Shufflenet](https://drive.google.com/file/d/1-CBr2qc8xHAqtYuXKnEKrKOe6JySiQyx/view?usp=sharing)

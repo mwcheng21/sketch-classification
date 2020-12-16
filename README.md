@@ -1,20 +1,28 @@
 # Finetuning pretrained ImageNet Image Classifiers for Free-hand Sketch Recognition
-## !!!!!CURRENTLY IN PROGRESS!!!!!!
 
 20 Epoch fine tuning
 | Model type | top-1  | top-5  |
 |------------|---|---|
-| alexnet    | 0.659  | 0.8805 |
-| vgg        | 0.72425| 0.909  |
-| squeezenet | 0.6595 | 0.87925|
-| densenet   | 0.75175| 0.93375|
-| resnet     | 0.735  | 0.923  |
-| googlenet  | 0.7175 | 0.91875|
-| mobilenet  | 0.729  | 0.91475|
-| shufflenet | 0.168  | 0.392  |
-| resnext    | 0.7555 | 0.94   |
-| mnasnet    | 0.7205 | 0.92075|
-| wideresnet | 0.76525| 0.93525|
+|AlexNet       |0.659    |0.8805|
+|SqueezeNet    |0.6595   |0.87925|
+|VGG-11_bn          |0.72425  |0.909|
+|VGG-11 |0.69725  |0.89175|
+|VGG-19_bn         |0.73825  |0.924|
+|VGG-19 |0.721  |0.9055|
+|ShuffleNet    |0.168    |0.392|
+|MobileNet     |0.729    |0.91475|
+|MNASNet       |0.7205   |0.92075|
+|GoogLeNet     |0.7175   |0.91875|
+|ResNet-18        |0.735    |0.923|
+|ResNet-101 |0.7575  |0.93025|
+|ResNet-152     |0.7655  |0.93575|
+|Wide ResNet-50    |0.76525  |0.93525|
+|Wide ResNet-101 |0.766  |0.9425|
+|ResNeXt-50       |0.7555   |0.94|
+|ResNeXt-101 |0.777  |0.9452|
+|DenseNet-121      |0.75175  |0.93375|
+|DenseNet-161 |0.77  |0.9375|
+|DenseNet-201   |0.771  |0.94025|
 
 ## Models:
 Get model:
@@ -55,3 +63,6 @@ Output is 250x1 array
 
 [MobileNet](https://drive.google.com/file/d/1weqhBx0Rs4b7rfOQI8G9gHm8crBp1b3Y/view?usp=sharing)
 
+
+## Dataset
+[TU-Berlin Sketch dataset](http://cybertron.cg.tu-berlin.de/eitz/projects/classifysketch/) under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)

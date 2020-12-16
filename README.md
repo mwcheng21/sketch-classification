@@ -19,8 +19,9 @@
 ## Models:
 Get model:
 Click link, URL will be in format `https://drive.google.com/file/d/<FILEID>/view`
+Replace `<FILEID>` and `FILEOUTPUT` in this command
 ```bash
-wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=<FILEID>' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1qEGk84k8KGK93jRD9OIlW1Ed4c5Iq96Z" -O <FILEOUTPUT> && rm -rf /tmp/cookies.txt
+wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=<FILEID>' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=<FILEID>" -O <FILEOUTPUT> && rm -rf /tmp/cookies.txt
 ```
 
 Load model:
@@ -28,7 +29,9 @@ Load model:
 import torch
 model = torch.load('<FILEOUTPUT>')
 ```
+All models input with size of 224x224 image
 
+Output is 250x1 array
 
 [Shufflenet](https://drive.google.com/file/d/1-CBr2qc8xHAqtYuXKnEKrKOe6JySiQyx/view?usp=sharing)
 
@@ -49,7 +52,6 @@ model = torch.load('<FILEOUTPUT>')
 [ResNet](https://drive.google.com/file/d/10Go0fA8TdjL66cKw6H5aHCXjknOyisuG/view?usp=sharing)
 
 [GoogLeNet](https://drive.google.com/file/d/10S2v3TkP_9dHh-dXrO7uNj5f0nXZSpmT/view?usp=sharing)
-
 
 [MobileNet](https://drive.google.com/file/d/1weqhBx0Rs4b7rfOQI8G9gHm8crBp1b3Y/view?usp=sharing)
 

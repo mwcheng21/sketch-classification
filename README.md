@@ -3,7 +3,7 @@
 We fine-tuned eleven different types of pretrained ImageNet models for sketch recognition. We show that some recent deep neural network architectures trained on natural images can be better than some architectures that are specifically designed for sketch recognition. We also propose that the commonly used AlexNet performs sub optimally on sketch recognition, and that residual networks are a better alternative. Using the TU-Berlin benchmark we were able to achieve a top-1 accuracy of 77.7% and top-5 accuracy of 94.5% with the ResNeXt architecture.
 
 # Contents
-* [Paper](https://github.com/mwcheng21/sketch-classification#paper)
+* [Paper](https://github.com/mwcheng21/sketch-classification/blob/main/FreehandSketchClassification.pdf)
 * [Results](https://github.com/mwcheng21/sketch-classification#results)
 * [Models](https://github.com/mwcheng21/sketch-classification#models)
 * [Dataset](https://github.com/mwcheng21/sketch-classification#dataset)

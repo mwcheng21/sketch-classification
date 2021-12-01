@@ -14,7 +14,7 @@ For detailed information see paper [here](https://github.com/mwcheng21/sketch-cl
 
 ## Results
 
-For information on each model, see [here](https://pytorch.org/docs/stable/torchvision/models.html)
+For information on each model, see [here](https://pytorch.org/vision/stable/models.html)
 
 | Model type | top-1  | top-5  |
 |------------|---|---|
